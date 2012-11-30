@@ -8,6 +8,6 @@ install:
   - sudo apt-get -y install linux-headers-$(uname -r)
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
-  - sudo gem install veewee
+  - gem install veewee
 script:
   - ls
