@@ -11,19 +11,20 @@ install:
   - gem install veewee
 script:
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
-  - veewee vbox define 'myubuntubox' 'ubuntu-11.10-server-i386'
+  - veewee vbox define 'myubuntubox' 'CentOS-6.3-i386-minimal'
+  - date
   - "DISPLAY=:99 veewee vbox build 'myubuntubox' --auto --debug &"
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
+  - sleep 301
+  - sleep 302
+  - sleep 303
+  - sleep 304
+  - sleep 305
+  - sleep 306
+  - sleep 307
+  - sleep 308
+  - sleep 309
+  - sleep 310
+  - sleep 311
+  - sleep 312
+  - sleep 313
+  - sleep 314
