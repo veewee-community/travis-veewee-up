@@ -13,18 +13,4 @@ script:
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
   - veewee vbox define 'myubuntubox' 'Sysrescuecd-2.0.0-experimental'
   - date
-  - "DISPLAY=:99 veewee vbox build 'mybox' --auto --debug &"
-  - sleep 301
-  - sleep 302
-  - sleep 303
-  - sleep 304
-  - sleep 305
-  - sleep 306
-  - sleep 307
-  - sleep 308
-  - sleep 309
-  - sleep 310
-  - sleep 311
-  - sleep 312
-  - sleep 313
-  - sleep 314
+  - "DISPLAY=:99 veewee vbox build 'mybox' --auto --debug"
