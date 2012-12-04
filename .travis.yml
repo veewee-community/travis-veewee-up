@@ -9,10 +9,8 @@ install:
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
   - gem install veewee
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
 script:
-  - veewee vbox define 'mybox' 'ubuntu-11.10-server-i386'
+  - veewee vbox define 'mybox' 'ubuntu-11.10-server-amd64'
   - date
   - veewee vbox build 'mybox' --auto --debug --nogui
   - date
