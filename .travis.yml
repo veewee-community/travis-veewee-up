@@ -13,4 +13,4 @@ script:
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
   - veewee vbox define 'mybox' 'ubuntu-11.10-server-i386'
   - date
-  - "DISPLAY=:99 veewee vbox build 'mybox' --auto --debug"
+  - "DISPLAY=:99 veewee vbox build 'mybox' --auto --debug --nogui"
