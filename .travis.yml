@@ -10,7 +10,7 @@ install:
   - VBoxManage -v
   - gem install veewee
 script:
-  - veewee vbox define 'mybox' 'ubuntu-11.10-server-amd64'
+  - veewee vbox define 'mybox' 'ubuntu-11.10-server-i386'
   - date
   - veewee vbox build 'mybox' --auto --debug --nogui
   - date
