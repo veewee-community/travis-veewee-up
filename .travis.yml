@@ -14,5 +14,5 @@ install:
 script:
   - veewee vbox define 'mybox' 'ubuntu-11.10-server-i386'
   - date
-  - "DISPLAY=:99 veewee vbox build 'mybox' --auto --debug --nogui"
+  - veewee vbox build 'mybox' --auto --debug --nogui
   - date
