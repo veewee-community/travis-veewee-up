@@ -10,7 +10,14 @@ install:
   - VBoxManage -v
   - gem install veewee
 script:
-  - veewee vbox define 'mybox' 'ubuntu-11.10-server-i386'
   - date
-  - veewee vbox build 'mybox' --auto --debug --nogui
+  - veewee vbox build 'ubuntu-11.10-server-i386' --auto --debug --nogui
   - date
+  - export VEEWEEBOT_DEPLOY_FILE=ubuntu-11.10-server-i386.box
+  - curl https://raw.github.com/veewee-community/veeweebot/master/deploy.sh > deploy.sh
+  - chmod +x deploy.sh
+  - ./deploy.sh
+env:
+  global:
+    - secure: "NkHH5RTqsxd+yHTNE2KhOkzhLHg9oh2UCeyvvnUWhYcwTCpRv+IrXc6Fi7uJ\n9FGe1DuSD/cnhNFJSMDbL5mN6NSSZ1HM6U2YPvsZBuBsJcePJr1rlDdbdmwQ\nJMssMIxdr4qRMvjjRX2fjXICx8MKA2w0jEKLbTzVbIjDopzE07I="
+    - secure: "XYFSnPbrczz5LLSAYzCHQCFpZZF6e7Ofwu+bVnSDezqmXoCqbzBvuc6JL1AB\nP5IifPOum7crZ4DP6ybb9jxiIvkafP9Al/QpOON4rZOFUc7K8yYDRVoQLHoL\noak/VtLPHU4DjSguxVaR3A8ddap1a8jjGRZ1KGGwFxG9UqNo7A0="
