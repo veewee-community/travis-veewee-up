@@ -11,6 +11,8 @@ install:
   - gem query --local
   - gem install vagrant --version 1.0.6
   - gem query --local
+  - gem uninstall json --version 1.5.4
+  - gem query --local
   - gem install json --version 1.7.6
   - gem query --local
   - gem install veewee
