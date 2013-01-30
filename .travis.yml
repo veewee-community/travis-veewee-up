@@ -9,13 +9,7 @@ install:
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
   - gem query --local
-  - gem install vagrant --version 1.0.6
-  - gem query --local
-  - gem uninstall json --version 1.5.4 --ignore-dependencies --executables
-  - gem query --local
-  - gem install json --version 1.7.6
-  - gem query --local
-  - gem install veewee
+  - gem install veewee --version 0.3.6
   - gem query --local
 script:
   - date
