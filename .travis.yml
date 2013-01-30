@@ -8,6 +8,7 @@ install:
   - sudo apt-get -y install linux-headers-$(uname -r)
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
+  - gem install json --version 1.7.6
   - gem install vagrant --version 1.0.5
   - gem install veewee
 script:
