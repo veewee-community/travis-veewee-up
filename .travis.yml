@@ -8,9 +8,9 @@ install:
   - sudo apt-get -y install linux-headers-$(uname -r)
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
-  - gem query --local
-  - gem install veewee --version 0.3.6
-  - gem query --local
+  - gem install json -v 1.5.4 --no-rdoc --no-ri
+  - gem install gherkin -v 2.11.5 --no-rdoc --no-ri
+  - gem install veewee --no-rdoc --no-ri
 script:
   - date
   - veewee vbox build 'ubuntu-11.10-server-i386' --auto --debug --nogui
