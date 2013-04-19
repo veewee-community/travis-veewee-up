@@ -9,8 +9,6 @@ install:
   - sudo apt-get -y install linux-headers-virtual
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
-  - gem install json -v 1.5.4 --no-rdoc --no-ri
-  - gem install gherkin -v 2.11.5 --no-rdoc --no-ri
   - gem install veewee --no-rdoc --no-ri
 script:
   - date
