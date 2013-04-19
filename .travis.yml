@@ -9,10 +9,11 @@ install:
   - sudo apt-get -y install linux-headers-virtual
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
-  - gem install veewee --no-rdoc --no-ri
+  - gem install bundler --no-rdoc --no-ri
+  - bundle
 script:
   - date
-  - veewee vbox build 'ubuntu-11.10-server-i386' --auto --debug --nogui
+  - bundle exec veewee vbox build 'ubuntu-11.10-server-i386' --auto --debug --nogui
   - date
   - export VEEWEEBOT_DEPLOY_FILE=ubuntu-11.10-server-i386.box
   - curl https://raw.github.com/veewee-community/veeweebot/master/deploy.sh > deploy.sh
